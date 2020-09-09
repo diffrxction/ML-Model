@@ -19,3 +19,9 @@ def hamming_distance(pt1,pt2):
 
 print(hamming_distance([1, 2], [1, 100]))
 print(hamming_distance([5, 4, 9], [1, 7, 9]))
+
+
+# Using SciPy's inbuilt functions, this would turn into :
+#print(distance.euclidean([1, 2],[4, 0]))
+#print(distance.hamming([5, 4, 9],[1, 7, 9]))
+#print(distance.cityblock([1, 2],[4,0]))
