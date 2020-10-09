@@ -22,7 +22,7 @@ regr = linear_model.LinearRegression()
 #7
 regr.fit(X,y)
 #8
-#print(regr.coef_[0])
+print(regr.coef_[0])
 #9
 y_predict = regr.predict(X)
 #10
