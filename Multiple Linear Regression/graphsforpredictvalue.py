@@ -21,6 +21,8 @@ model=lm.fit(x_train, y_train)
 
 y_predict = lm.predict(x_test)
 
+#To find the coefficients of the Linear Regression plot, we use :
+print(lm.coef_)
 # This is the new part after predict.py
 # alpha represents the opacity of scattered points (Maximum value = 1).
 # Tip to self: Format for graph s is (x, y, alpha(optional))
