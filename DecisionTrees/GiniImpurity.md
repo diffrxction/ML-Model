@@ -19,3 +19,15 @@ for label in label_counts:
 
 print(impurity)
 ```
+### As a function:
+```python
+
+def gini(dataset):
+  impurity = 1
+  label_counts = Counter(dataset)
+  for label in label_counts:
+    prob_of_label = label_counts[label] / len(dataset)
+    impurity -= prob_of_label ** 2
+  return impurity
+
+```
