@@ -34,6 +34,13 @@ def gini(dataset):
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Weighted Information Gain
+
+Concept : 
+- A set of cases with 3 good (pure, correct) cases and 3 impure cases has an impurity of 0.5.
+- Similarly, a set with one good case and one impure case also has an impurity of 0.5.
+- Cleaning first case requires more effort, as the 3 impure cases may affect more than the one impure case.
+- Hence, we can say that the size of set is also relevant in decision trees. So to implement this, instead of simply subtracting the impurity of each set, we’ll subtract the weighted impurity of each of the split sets. If the data before the split contained 20 items and one of the resulting splits contained 2 items, then the weighted impurity of that subset would be 2/20 * impurity. We’re lowering the importance of the impurity of sets with few elements.
+
 ```python
 from collections import Counter
 
