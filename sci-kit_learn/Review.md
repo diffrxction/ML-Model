@@ -10,5 +10,3 @@ Seen how to implement a linear regression algorithm in Python, and how to use th
    - We can use Scikit-learn’s LinearRegression() model to perform linear regression on a set of points.
 
 These are important tools to have in your toolkit as you continue your exploration of data science.
-
-As a starter, I’ve loaded in the [Boston housing dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston). The X values are the nitrogen oxides concentration (parts per 10 million), and the y values the housing prices. Check if  regression is possible on these houses!
